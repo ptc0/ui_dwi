@@ -8,9 +8,12 @@
 - electron-builder
 - electron-packager
 
-## Run the app (if you're are working in the project)
+## Useful commands (if you're are working in the project)
 ```bash
 npm run start
+```
+```bash
+npm run dist
 ```
 
 <br><img src="https://web.ptc.cloudns.nz/assets/ptc_watermark.png" style="width: 15%;">
