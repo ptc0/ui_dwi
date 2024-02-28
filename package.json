@@ -1,0 +1,39 @@
+{
+  "name": "ui_dwi",
+  "productName": "ptc0's discord webhook interactor",
+  "version": "1.0.0",
+  "description": "an user friendly discord webhook interactor written in electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "npx electron-builder build"
+  },
+  "author": {
+    "name": "ptc0",
+    "email": "ptc@ptc.cloudns.nz",
+    "url": "https://web.ptc.cloudns.nz/"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "com.ptc0.DWI",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/DWI.ico"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "build/DWI.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.1",
+    "electron-builder": "^24.12.0",
+    "electron-packager": "^17.1.2"
+  }
+}

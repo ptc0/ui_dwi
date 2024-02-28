@@ -1,0 +1,138 @@
+body {
+    background-color: #212121;
+    align-content: center;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, span {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+#errormsg {
+    color: red;
+}
+
+#successmsg {
+    color: #00ce00;
+}
+
+#infomsg {
+    color: #0067ce;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: #191919;
+    width: 80%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left !important;
+}
+
+#msg_contents {
+    height: 100px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.65;
+}
+
+.preview {
+    position: relative;
+}
+
+img {
+    width: 15%;
+    border-radius: 5px;
+    float: left;
+    margin: 3%;
+}
+
+#preview_username {
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    width: 350px;
+    text-align: left;
+}
+
+#preview_username_config {
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    width: 350px;
+    text-align: left;
+}
+
+#preview_msgcontent {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    word-wrap: break-word;
+    width: 350px;
+    text-align: left;
+    text-overflow: ellipsis;
+    max-height: 105px;
+    display: block;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+#preview_msgconfig {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    word-wrap: break-word;
+    width: 350px;
+    text-align: left;
+    text-overflow: ellipsis;
+    max-height: 105px;
+    display: block;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+#watermark {
+    z-index: -1;
+    position: fixed;
+    width: 100px;
+    bottom: 50px;
+    right: .1px;
+    opacity: .2;
+}
+
+#watermark:hover{
+    width: 120px;
+    opacity: .9;
+}

@@ -1,0 +1,47 @@
+<!--
+    File: webhook_config.html
+    Creator: ptc0
+
+    Description: configuration page for the webhook that transports data via localstorage
+
+    UI_DiscordWebhookInteractor powered by electronjs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ptc0's discord webhook interactor ⁖ webhook settings</title>
+</head>
+<body>
+    <!--                         main content                         -->
+    <div class="preview">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="discord_pic" id="preview_img_config">
+        <span id="preview_username_config">username</span>
+        <span id="preview_msgconfig">your super cool message</span>
+    </div>
+
+    <p></p>
+    <p></p>
+
+    <div>
+        <input type="text" id="wb_name_insert" placeholder="your discord webhook name goes here"/>
+        <input type="text" id="wb_image_insert" placeholder="your discord webhook image url goes here"/>
+    </div>
+
+    <footer>
+        <div>
+            <button type="button" id="save_ps" onclick="saveConfig()">save webhook profile settings</button>
+            <button type="button" id="return_index" onclick="location.href='index.html'">return to webhook sender</button>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </footer>
+
+    <!--                            scripts                           -->
+    <script src="./js/sendWebhook.js"></script> 
+    <script src="./js/updateInConfig.js"></script> 
+</body>
