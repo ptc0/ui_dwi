@@ -74,18 +74,16 @@ function sendWebhookSolicitation() {
     var errorMsg = document.getElementById("errormsg");
     var infoMsg = document.getElementById("infomsg");
 
-    // Display "Please wait..." message
     infoMsg.textContent = "uidwi >> << discord";
     successMsg.textContent = "";
     errorMsg.textContent = "";
 
     sendSound.play();
 
-    // Check if webhook URL is empty
     if (!webhook_url.trim()) {
         errorMsg.textContent = "webhook url cannot be empty.";
-        infoMsg.textContent = ""; // Clear "Please wait..." message
-        return; // Stop further execution
+        infoMsg.textContent = ""; 
+        return;
     }
 
     var request = new XMLHttpRequest();
@@ -107,7 +105,6 @@ function sendWebhookSolicitation() {
                 errorSound.play();
             }
         }
-        // Clear "Please wait..." message
         infoMsg.textContent = "";
     };
 
@@ -115,7 +112,6 @@ function sendWebhookSolicitation() {
         successMsg.textContent = "";
         errorMsg.textContent = "error ocourred during the communication with server";
         errorSound.play();
-        // Clear "Please wait..." message
         infoMsg.textContent = "";
     };
 
