@@ -1,5 +1,5 @@
 # UI Discord Webhook Interactor
-<i>(linux and UNIX based systems comming soon)</i>
+<i>(linux and other UNIX based systems comming soon)</i>
 
 <p>open source user friendly discord webhook interactor written in electron</p>
 <p>your friends keep telling about discord webhooks and about the funny stuff you can do with them, but you're too lazy to use discohook? well look no further!</p>
